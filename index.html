@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header section with logo on the left and navigation on the right -->
+    <div class="header">
+        <div class="logo">
+            <img src="image/rebel.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="nav">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="leaderboard.html" class="nav-item">Leaderboard</a>
+            <a href="help.html" class="nav-item">Help</a>
+            <!-- dropdown for login -->
+            <div class="dropdown">
+                <button class="dropbtn nav-item">Acount</button>
+                <div class="dropdown-content" id="loginDropdown">
+                    <a href="login.html" id="loginLink">Login</a>
+                    <a href="signin.html" id="signUpLink">Sign Up</a>
+                    <span id="loggedInUser" style="display: none;">User: <span id="username"></span></span>
+                    <a href="#" id="logoutLink" style="display: none;" onclick="logout()">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- yellow border line under the header -->
+    <div class="yellow-border"></div>
+
+    <!-- displays background image -->
+    <div class="content-with-background">
+        <!-- displays the images and messages in the curvered border-->
+        <div class="curved-border">
+            <h1>WELCOME TO REBEL FIGHTER !!!</h1>
+            <P>Join the battle in this thrilling 2D game as you fight against the dark side to help turn the tide of
+                war. Do you have what it takes to claim victory? </P>
+            <h2>GAME RULES</h2>
+            <P>1: No Cheating</P>
+            <P>2: Don't Get Angry</P>
+            <P>3: Follow The Instructions</P>
+            <P>4: HAVE FUN !!!!!</P>
+        </div>
+        <!-- displays the image link-->
+        <a href="game.html"><img src="image/start.png" alt="start game" class="start"></a>
+        <p class="P1">(CLICK ME TO PLAY)</p>
+
+
+
+
+    </div>
+
+    <!-- yellow border line at the bottom of the page -->
+    <div class="yellow-border-bottom"></div>
+    <!-- displays the message at the bottom right-->
+    <div class="helpat">
+        <P>help@rebelfighters.com</P>
+    </div>
+    <script src="javascripit/sign.js"></script>
+</body>
+
+</html>

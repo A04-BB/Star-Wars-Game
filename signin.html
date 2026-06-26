@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header section with Logo on the left and navigation on the right -->
+    <div class="header">
+        <div class="logo">
+            <img src="image/rebel.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="nav">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="leaderboard.html" class="nav-item">Leaderboard</a>
+            <a href="help.html" class="nav-item">Help</a>
+            <!-- dropdown for login -->
+            <div class="dropdown">
+                <button class="dropbtn nav-item">Account</button>
+                <div class="dropdown-content" id="loginDropdown">
+                    <a href="login.html" id="loginLink">Login</a>
+                    <a href="signin.html" id="signUpLink">Sign Up</a>
+                    <span id="loggedInUser" style="display: none;">User: <span id="username"></span></span>
+                    <a href="#" id="logoutLink" style="display: none;" onclick="logout()">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- yellow border line under the header -->
+    <div class="yellow-border"></div>
+
+   <!-- displays background image -->
+    <div class="content-with-background">
+        <!-- displays signup form with inputs -->
+        <div class="signupform">
+            <h4>SIGN UP</h4>
+            <form onsubmit="signup(event)">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email"
+                        required>
+                </div>
+                <div>
+                    <label for="user">Username:</label>
+                    <input type="text" id="user" name="username" placeholder="Choose a username" autocomplete="username"
+                        required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password"
+                        autocomplete="new-password" required>
+                </div>
+                <div>
+                    <label for="DOB">Date of Birth:</label>
+                    <input type="date" id="DOB" name="dob" placeholder="Date of birth" autocomplete="bday" required>
+                </div>
+                <div>
+                    <label for="phone">telephone:</label>
+                    <input type="tel" id="phone" placeholder="Phone Number" autocomplete="UK Number" required>
+                </div>
+                <div>
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <!-- yellow border line at the bottom of the page -->
+    <div class="yellow-border-bottom"></div>
+    <!-- displays the message at the bottom right-->
+    <div class="helpat">
+        <P>help@rebelfighters.com</P>
+    </div>
+
+    <script src="javascripit/sign.js"></script>
+
+
+</body>
+
+</html>
